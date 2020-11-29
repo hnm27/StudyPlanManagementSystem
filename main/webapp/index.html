@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="resources/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="resources/js/app.js"></script>
+  </head>
+  <body onload="localStorage.clear();">
+    <div class="login-box">
+      <h1>Login</h1>
+      <form
+        class="form_layer"
+        id="form_id"
+        action="../onlineStore/rest/login"
+        method="POST"
+      >
+        <div class="textbox">
+          <label for="email"><i class="fas fa-user"></i></label>
+          <input
+            type="text"
+            placeholder="Username"
+            id="the_username"
+            name="email"
+            required
+          />
+        </div>
+
+        <div class="textbox">
+          <label for="password"></label><i class="fas fa-lock"></i>
+          <input
+            type="password"
+            placeholder="Password"
+            id="the_password"
+            name="password"
+            required
+          />
+          <i class="fas fa-eye-slash" id="eye" onclick="reveal()"></i>
+        </div>
+        <div class="login_button">
+          <button type="button" class="btn" value="Sign in" id="button">
+            Sign in
+          </button>
+        </div>
+      </form>
+      <p>
+        Have you chosen a course? If not, click
+        <a href="form/form.html"><b>here</b></a> to register.
+      </p>
+    </div>
+  </body>
+</html>

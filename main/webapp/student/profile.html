@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Student</title>
+    <link rel="stylesheet" href="resources/css/style.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="title">
+        <img
+          src="resources/logo.png"
+          alt="logo"
+        />
+      </div>
+      <div class="searchbar">
+        <input type="text" id="search" placeholder="🔎 Search study plans" />
+      </div>
+
+      <a href="" class="links" style="font-weight:bold">My Study Plans</a>
+      <a href="ProgramInformation.html" class="links" style="font-weight:bold"
+        >Program Information</a
+      >
+      <a href="resources/newstudyplan.html" class="links" style="font-weight:bold"
+        >Create New Study Plan</a
+      >
+      <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+    </div>
+    <div class="content">
+      <div class="profile">
+        <div class="buttons">
+          <button id="logOut" onclick="location.href = '../index.html'; ">
+            Log Out
+          </button>
+          <button id="profile" onclick="location.href = 'profile.html'; ">
+          Profile
+        </button>
+          <img
+            src="https://previews.123rf.com/images/piksel/piksel1110/piksel111000090/10982305-casual-guy-standing.jpg"
+            alt="Guy"
+            class="profilePic"
+          />
+        </div>
+
+      <div class= "submain">
+        <button id="logOut" onclick= "location.href = 'https://www.utwente.nl/en/eemcs/';">
+          EEMCS FACULTY |
+        </button>
+        <button id="logOut" onclick= "location.href = 'https://www.utwente.nl/en/education/master/programmes/computer-science/';">
+          Master Computer Science
+        </button>
+        <div class= "main">
+
+        </div>
+      </div>
+
+      </div>
+
+      <header>
+        <div class="header">
+          <h1 id="para_header">PROFILE</h1>
+        </div>
+      </header>
+
+      <main class="main_layer">
+        <div class="main_contents">
+          <form
+            class="form_layer"
+            action="http://localhost:8085/onlineStore/rest/Student"
+            method="POST"
+          >
+            <div class="form_page">
+              <div class="form_contents">
+                <h1>Master Technical Computer Science</h1>
+                <h2 id="year">ACADEMIC YEAR 2019 - 2020</h2>
+                <!-- <p id="intro">Programme mentor: Dr.ir. Maurice van Keulen</p> -->
+              </div>
+
+              <div class="form_contents form_label">
+                <label for="lastName" class="labeled"> Last Name:*</label>
+                <div class="form_input">
+                  <input
+                    type="text"
+                    name="lastName"
+                    class="text_input"
+                    placeholder=""
+                    id="lastName"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form_contents form_label">
+                <label for="firstName" class="labeled"> First Name:*</label>
+                <div class="form_input">
+                  <input
+                    type="text"
+                    name="firstName"
+                    class="text_input"
+                    placeholder=""
+                    id="firstName"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form_contents form_label">
+                <label for="student_number" class="labeled">
+                  Student number:*</label
+                >
+                <div class="form_input">
+                  <input
+                    type="text"
+                    name="student_number"
+                    class="text_input"
+                    placeholder="s123456"
+                    id="student_number"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form_contents form_label">
+                <label for="email_address" class="labeled">
+                  Email address:*</label
+                >
+                <div class="form_input">
+                  <input
+                    type="text"
+                    name="email_address"
+                    class="text_input"
+                    placeholder="address@student.utwente.nl"
+                    id="email_address"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form_contents form_label">
+                <label for="program" class="labeled">
+                  Your course: *</label
+                >
+                <div class="form_input form_radio">
+                  <label for="dst" class="labeled"> DST </label>
+                  <input
+                    type="radio"
+                    name="programme"
+                    class="answers"
+                    placeholder=""
+                    id="dst"
+                    value="dst"
+                    required
+                  />
+                  <br />
+                  <br />
+                  <label for="ist" class="labeled"> IST </label>
+                  <input
+                    type="radio"
+                    name="programme"
+                    class="answers"
+                    placeholder=""
+                    id="ist"
+                    value="ist"
+                    required
+                  />
+                  <br />
+                  <br />
+                  <label for="cs" class="labeled"> ST </label>
+                  <input
+                    type="radio"
+                    name="programme"
+                    class="answers"
+                    placeholder=""
+                    id="cs"
+                    value="cs"
+                    required
+                  />
+                  <div class="form_contents form_label">
+                    <label for="password" class="labeled"> Password:*</label>
+                    <div class="form_input">
+                      <input
+                        type="password"
+                        name="password"
+                        class="text_input"
+                        placeholder="*********"
+                        id="password"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <input
+                    type="button"
+                    value="CLOSE"
+                    class="btn"
+                    onclick="student/student.html"
+                  />
+                  <!-- For future reference change the for and value to st not cs!! -->
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+
+
+
+
+      </div>
+
+    </div>
+  </body>
+</html>

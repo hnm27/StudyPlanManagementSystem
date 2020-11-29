@@ -1,0 +1,414 @@
+<!DOCTYPE HTML>
+<!-- Index page of the Online Book Store. -->
+
+<html lang=”en”>
+<head>
+<title>Choose Courses</title>
+<link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+</head>
+
+<body>
+
+  <!-- Edit this part -->
+
+  <header>
+    <div class="header" id="header">
+      <p id="para_header">REGISTER FOR IST</p>
+    </div>
+  </header>
+  <main class="main_layer">
+    <div class="main_contents">
+      <form
+        class="form_layer"
+        action="../rest/Student"
+        method="POST"
+      >
+        <div class="form_page">
+          <div class="form_contents">
+            <h1>Master Technical Computer Science </h1>
+            <h2 id="year">ACADEMIC YEAR 2019 - 2020</h2>
+            <h3> Programme mentor: Dr.ir. Maurice van Keulen and sr.Arnd Hartmanns</h3>
+          </div>
+
+          <br/>
+
+          <div class="form_contents form_label">
+            <label for="program" class="labeled">
+              Is this your first time filling out a course form for this specialization? *</label
+            >
+            <div class="form_input form_radio">
+              <input
+                type="radio"
+                name="programme"
+                class="first"
+                placeholder=""
+                id="Yes"
+                value="Yes"
+                required
+              />
+              <label for="Yes" class="labeled"> Yes   <br/>
+Proceed by filling out the courses below. </label>
+              <br />
+              <br />
+              <input
+                type="radio"
+                name="programme"
+                class="first"
+                placeholder=""
+                id="No"
+                value="No"
+                required
+              />
+              <label for="No" class="labeled"> No <br/>
+If you want to change a previously submitted form, please briefly explain your changes in the field below, before proceeding by filling out the course form. </label>
+				<h4 id="errorChoice"></h4>
+              </div>
+              </div>
+
+              <br/>
+              <br/>
+
+              <div class="form_contents form_label">
+                <label for="studentcomment" class="labeled">
+                  Brief explanation of the changes you're about to submit:</label>
+
+                <div class="form_input">
+                  <input
+                    type="text"
+                    name="studentcomment"
+                    class="text_input"
+                    placeholder=""
+                    id="studentcomment"
+                  />
+                </div>
+              </div>
+
+              <br/>
+              <br/>
+
+
+          <div class="form_contents form_label">
+            <label for="program" class="labeled">
+              IST Core courses (mandatory) *</label>
+            <div class="form_input form_radio">
+              <input type="checkbox" name="programme" class="answers"checked="checked" placeholder=""
+                id="ist"
+                value="5"
+                required/>
+              <label for="ist" class="labeled"> 192620010 Mobile and wireless networking (2A) </label>
+            </br>
+            </br>
+              <input type="checkbox" name="programme" class="answers"checked="checked" placeholder=""
+                id="ist"
+                value="5"
+                required/>
+              <label for="ist" class="labeled"> 192620300 Performance evaluation (1B) </label>
+            </br>
+            </br>
+              <input type="checkbox" name="programme" class="answers"checked="checked" placeholder=""
+                id="ist"
+                value="5"
+                required/>
+              <label for="ist" class="labeled"> 201700075 Internet of Things (1A) </label>
+            </br>
+            </br>
+              <input type="checkbox" name="programme" class="answers"checked="checked" placeholder=""
+                id="ist"
+                value="5"
+                required/>
+              <label for="ist" class="labeled">201700074 Internet security (1A, 2A) </label>
+              </div>
+              </div>
+
+              <br/>
+              <br/>
+
+              <div class="form_contents form_label fourOutOfSix">
+                <label for="program" class="labeled">
+                  IST Advanced courses (4 out of 7) *</label>
+                <div class="form_input form_radio advanced">
+                  <input type="checkbox" name="programme" class="answers" placeholder=""
+                    id="201700077"
+                    value="5"
+                    required/>
+                  <label for="201700077" class="labeled"> 201700077 Advanced Networking (1A) </label>
+                </br>
+                </br>
+                  <input type="checkbox" name="programme" class="answers" placeholder=""
+                    id="192652150"
+                    value="5"
+                    required/>
+                  <label for="192652150" class="labeled"> 192652150 Service Oriented Architecture with Web Services (2A) </label>
+                </br>
+                </br>
+                  <input type="checkbox" name="programme" class="answers" placeholder=""
+                    id="201400177"
+                    value="5"
+                    required/>
+                  <label for="201400177" class="labeled"> 201400177 Cloud Networking (1B) </label>
+                </br>
+                </br>
+                  <input type="checkbox" name="programme" class="answers" placeholder=""
+                    id="201700073"
+                    value="5"
+                    required/>
+                  <label for="201700073" class="labeled"> 201700073 Ad-Hoc Networks (2B) </label>
+                </br>
+                </br>
+                  <input type="checkbox" name="programme" class="answers" placeholder=""
+                    id="192653100"
+                    value="5"
+                    required/>
+                  <label for="192653100" class="labeled"> 192653100 Internet Management and Measurement (2B) </label>
+                </br>
+                </br>
+                  <input type="checkbox" name="programme" class="answers" placeholder=""
+                    id="192111301"
+                    value="5"
+                    required/>
+                  <label for="192111301" class="labeled"> 192111301 Ubiquitous Computing (2A) </label>
+                </br>
+                </br>
+                  <input type="checkbox" name="programme" class="answers" placeholder=""
+                    id="192130112"
+                    value="5"
+                    required/>
+                  <label for="192130112" class="labeled"> 192130112 Distributed Systems (1B) </label>
+                  
+                  <h4 id = "fourneeded">
+                    
+                  </h4>
+                  
+                  </div>
+                  </div>
+
+                  <br/>
+                  <br/>
+
+                  <div class="form_contents form_label">
+                    <label for="program" class="labeled">
+                      Ethics (mandatory) *</label>
+                    <div class="form_input form_radio ethics">
+                      <input type="checkbox" name="programme"checked="checked" class="answers" placeholder=""
+                        id="ist"
+                        value="5"
+                        required/>
+                      <label for="ist" class="labeled"> 191612680 Computer Ethics (1B) </label>
+                      </div>
+                      </div>
+
+                      <br/>
+                      <br/>
+
+                      <div class="form_contents form_label">
+                        <label for="program" class="labeled">
+                          Graduation (mandatory) *</label>
+                        <div class="form_input form_radio">
+                          <input type="checkbox" name="programme"checked="checked" class="answers" placeholder=""
+                            id="ist"
+                            value="10"
+                            required/>
+                          <label for="ist" class="labeled"> 192199508 Research Topics 10EC </label>
+                        </br>
+                        </br>
+                          <input type="checkbox" name="programme"checked="checked" class="answers" placeholder=""
+                            id="ist"
+                            value="30"
+                            required/>
+                          <label for="ist" class="labeled">192199978 Final Project 30EC </label>
+                          </div>
+                          </div>
+
+                          <br/>
+                          <br/>
+
+<h4>You can fill your profiling space with e.g. Additional advanced courses, or courses from related programmes or specailizations like Electrical Engineering, Embedded Systems courses, Cyber security, Data Science, and Software Technology. </h4>
+                          <br/>
+                          <br/>
+
+                          <div class="form_contents form_label">
+                            <label for="program" class="labeled">
+                              Profiling space: suggested electives</label>
+                            <div class="form_input form_radio profiling">
+                              <input type="checkbox" name="programme" class="answers" placeholder=""
+                                id="192140122"
+                                value="5"
+                                />
+                              <label for="192140122" class="labeled"> 192140122 System validation (1A) </label>
+                            </br>
+                            </br>
+                              <input type="checkbox" name="programme" class="answers" placeholder=""
+                                id="192130240"
+                                value="5"
+                                />
+                              <label for="192130240" class="labeled"> 192130240 Embedded computer architectures (1A) </label>
+                            </br>
+                            </br>
+                              <input type="checkbox" name="programme" class="answers" placeholder=""
+                                id="201800222"
+                                value="5"
+                                />
+                              <label for="201800222" class="labeled"> 201800222 Complex Networks (1A)</label>
+                            </br>
+                            </br>
+                              <input type="checkbox" name="programme" class="answers" placeholder=""
+                                id="192110940"
+                                value="5"
+                                />
+                              <label for="192110940" class="labeled"> 192110940 Secure data management (1A) </label>
+                            </br>
+                            </br>
+                              <input type="checkbox" name="programme" class="answers" placeholder=""
+                                id="191211030"
+                                value="5"
+                                />
+                              <label for="191211030" class="labeled"> 191211030 Mobile Radio Communications (1A) </label>
+                            </br>
+                            </br>
+                              <input type="checkbox" name="programme" class="answers" placeholder=""
+                                id="192135450"
+                                value="5"
+                                />
+                              <label for="192135450" class="labeled"> 192135450 ADSA Model Driven Engineering (1A) </label>
+                            </br>
+                            </br>
+                              <input type="checkbox" name="programme" class="answers" placeholder=""
+                                id="201200006"
+                                value="5"
+                                />
+                              <label for="201200006" class="labeled"> 201200006 Quantitative evaluation of embedded systems (1B) </label>
+                            </br>
+                            </br>
+                              <input type="checkbox" name="programme" class="answers" placeholder=""
+                                id="201200044"
+                                value="5"
+                                />
+                              <label for="201200044" class="labeled"> 201200044 Managing big data (1B) </label>
+                            </br>
+                            </br>
+                              <input type="checkbox" name="programme" class="answers" placeholder=""
+                                id="201600051"
+                                value="5"
+                                />
+                              <label for="201600051" class="labeled"> 201600051 Software security (1B) </label>
+                            </br>
+                            </br>
+                              <input type="checkbox" name="programme" class="answers" placeholder=""
+                                id="201400174"
+                                value="5"
+                                />
+                              <label for="201400174" class="labeled"> 201400174 Data science (1B, 2A) </label>
+                            </br>
+                            </br>
+                              <input type="checkbox" name="programme" class="answers" placeholder=""
+                                id="192170015"
+                                value="5"
+                                />
+                              <label for="192170015" class="labeled"> 192170015 Testing techniques (2A) </label>
+                            </br>
+                            </br>
+                              <input type="checkbox" name="programme" class="answers" placeholder=""
+                                id="192320111"
+                                value="5"
+                                />
+                              <label for="192320111" class="labeled"> 192320111 Architecture of information systems (2B) </label>
+                            </br>
+                            </br>
+                              <input type="checkbox" name="programme" class="answers" placeholder=""
+                                id="201500042"
+                                value="5"
+                                />
+                              <label for="201500042" class="labeled"> 201500042 Privacy enhancing technologies (2B) </label>
+                            </br>
+                            </br>
+                              <input type="checkbox" name="programme" class="answers" placeholder=""
+                                id="201400176"
+                                value="5"
+                                />
+                              <label for="201400176" class="labeled"> 201400176 Dependable networking (JAAR) </label>
+                            </br>
+                            </br>
+                              <input type="checkbox" name="programme" class="answers" placeholder=""
+                                id="201200231"
+                                value="5"
+                                />
+                              <label for="201200231" class="labeled"> 201200231 Smart antennas & propagation (2B) </label>
+                              </div>
+                              </div>
+
+                              <br/>
+                              <br/>
+                              
+                              <h4>Apart from the above choices, students can also pick:</h4>
+                         	  <div class="form_contents form_label">
+                            	<label for="program" class="labeled">
+                             	  Internship (Optional)</label>
+                           	    <div class="form_input form_radio">
+                              	  <input type="checkbox" name="programme" class="answers tester" placeholder=""
+                                	id="internship"
+                                	value="20"
+                                	/>
+                              	  <label for="internship" class="labeled">Internship 20EC </label>
+                                  	  <h4 id = "testing">
+                                    	1. The internship is a period of study-related professional practice amounting to 20 ECs and is carried out by the student at a company, university or organization outside the University of Twente. <br/> 2. Requirements for starting the internship: <br/> a. students must already have obtained at least 45 ECs of their examination programme; <br/> <a href="ter-2019-master-cs-ist.pdf" download>For more information</a>
+                                  	  </h4>
+                            	</div>
+                          	  </div>
+
+                              <div class="form_contents form_label">
+                                <label for="email_address" class="labeled">
+                                  Profiling space: Other courses (course code, course name):</label>
+
+                                <div class="form_input">
+                                  <input
+                                    type="text"
+                                    name="email_address"
+                                    class="text_input"
+                                    placeholder=""
+                                    id="email_address"
+                                  />
+                                </div>
+                              </div>
+
+                              <br/>
+                              <br/>
+
+                              <div class="form_contents form_label">
+                                <label for="studentcomment1" class="labeled">
+                                  If you proposed "other courses" above, please explain how these form a coherent IS&T programme targeting your specific individual goals</label>
+
+                                <div class="form_input">
+                                  <input
+                                    type="text"
+                                    name="studentcomment1"
+                                    class="text_input"
+                                    placeholder=""
+                                    id="studentcomment1"
+                                  />
+                                </div>
+                              </div>
+                              <br/>
+                              <br/>
+                              <br/>
+                              <br/>
+                              <h4 id="total">Your Total is = </h4>
+                              <h4 id="totalError"> </h4>
+                            
+                          <br/>
+                          <br/>
+                          <br/>
+                          <p><b>* indicates a required field</b></p>
+                          <br/>
+                          <button type="button" class="btn" onclick="testingg(event)">SUBMIT</button>
+                          <input type="submit" value="RETURN" class="btn"/>
+                          <br/>
+                          <br/>
+        </div>
+      </form>
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/ist_app.js"></script>
+</body>
+</html>

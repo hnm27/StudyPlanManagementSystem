@@ -1,0 +1,384 @@
+<!DOCTYPE HTML>
+<!-- Index page of the Online Book Store. -->
+
+<html lang=”en”>
+<head>
+<title>Choose Courses</title>
+<link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+</head>
+
+<body>
+
+  <!-- Edit this part -->
+
+  <header>
+    <div class="header" id ="header">
+      <p id="para_header">REGISTER FOR ST</p>
+    </div>
+  </header>
+  <main class="main_layer">
+    <div class="main_contents">
+      <form
+        class="form_layer"
+        action="../rest/Student"
+        method="POST"
+      >
+        <div class="form_page">
+          <div class="form_contents">
+            <h1>Master Technical Computer Science </h1>
+            <h2 id="year">ACADEMIC YEAR 2019 - 2020</h2>
+            <h3> Programme mentor: Dr.ir. Maurice van Keulen and sr.Arnd Hartmanns</h3>
+          </div>
+
+          <br/>
+
+          <div class="form_contents form_label">
+            <label for="program" class="labeled">
+              Is this your first time filling out a course form for this specialization? *</label
+            >
+            <div class="form_input form_radio">
+              <input
+                type="radio"
+                name="programme"
+                class="first"
+                placeholder=""
+                id="Yes"
+                value="Yes"
+                required
+              />
+              <label for="Yes" class="labeled"> Yes   <br/>
+Proceed by filling out the courses below. </label>
+              <br />
+              <br />
+              <input
+                type="radio"
+                name="programme"
+                class="first"
+                placeholder=""
+                id="No"
+                value="No"
+                required
+              />
+              <label for="No" class="labeled"> No <br/>
+If you want to change a previously submitted form, please briefly explain your changes in the field below, before proceeding by filling out the course form. </label>
+				<h4 id="errorChoice"></h4>
+              </div>
+              </div>
+
+              <br/>
+              <br/>
+
+              <div class="form_contents form_label">
+                <label for="studentcomment" class="labeled">
+                  Brief explanation of the changes you're about to submit:</label>
+
+                <div class="form_input">
+                  <input
+                    type="text"
+                    name="studentcomment"
+                    class="text_input"
+                    placeholder=""
+                    id="studentcomment"
+                  />
+                </div>
+              </div>
+
+              <br/>
+              <br/>
+
+
+          <div class="form_contents form_label">
+            <label for="program" class="labeled">
+              ST Core courses (mandatory) *</label>
+            <div class="form_input form_radio">
+              <input type="checkbox" name="programme" class="answers"checked="checked" placeholder=""
+                id="st"
+                value="5"
+                required/>
+              <label for="st" class="labeled"> 192140122 System Validation </label>
+            </br>
+            </br>
+              <input type="checkbox" name="programme" class="answers"checked="checked" placeholder=""
+                id="st"
+                value="5"
+                required/>
+              <label for="st" class="labeled"> 192135450 ADSA - Model-Driven Engineering </label>
+            </br>
+            </br>
+              <input type="checkbox" name="programme" class="answers"checked="checked" placeholder=""
+                id="st"
+                value="5"
+                required/>
+              <label for="st" class="labeled"> 192170015 Testing Techniques </label>
+            </br>
+            </br>
+              <input type="checkbox" name="programme" class="answers"checked="checked" placeholder=""
+                id="st"
+                value="5"
+                required/>
+              <label for="st" class="labeled">201700082 Principles of Programming, Processes and Patterns </label>
+              </div>
+              </div>
+
+              <br/>
+              <br/>
+
+              <div class="form_contents form_label fourOutOfSix">
+                <label for="program" class="labeled">
+                  ST Advanced courses (4 out of 7) *</label>
+                <div class="form_input form_radio">
+                  <input type="checkbox" name="programme" class="answers" placeholder=""
+                    id="192111092"
+                    value="5"
+                    required/>
+                  <label for="192111092" class="labeled"> 192111092 Advanced logic </label>
+                </br>
+                </br>
+                  <input type="checkbox" name="programme" class="answers" placeholder=""
+                    id="192340041"
+                    value="5"
+                    required/>
+                  <label for="192340041" class="labeled">192340041 Software Management </label>
+                </br>
+                </br>
+                  <input type="checkbox" name="programme" class="answers" placeholder=""
+                    id="201600040"
+                    value="5"
+                    required/>
+                  <label for="201600040" class="labeled"> 201600040 Requirements Engineering Processes and Methods <label>
+                </br>
+                </br>
+                  <input type="checkbox" name="programme" class="answers" placeholder=""
+                    id="192111332"
+                    value="5"
+                    required/>
+                  <label for="192111332" class="labeled">192111332 Design of Software Architectures </label>
+                </br>
+                </br>
+                  <input type="checkbox" name="programme" class="answers" placeholder=""
+                    id="192652150"
+                    value="5"
+                    required/>
+                  <label for="192652150" class="labeled"> 192652150 Service-oriented Architecture Web Services </label>
+                </br>
+                </br>
+                  <input type="checkbox" name="programme" class="answers" placeholder=""
+                    id="192135310"
+                    value="5"
+                    required/>
+                  <label for="192135310" class="labeled">192135310 Modeling and Analysis of Concurrent Systems </label>
+                </br>
+                </br>
+                  <input type="checkbox" name="programme" class="answers" placeholder=""
+                    id="201900082"
+                    value="5"
+                    required/>
+                  <label for="201900082" class="labeled"> 201900082 Advanced Algorithms and Computational Complexity </label>
+				 
+				  <h4 id = "fourneeded">
+                    
+                  </h4>
+                  
+                  </div>
+                  </div>
+
+                  <br/>
+                  <br/>
+
+                  <div class="form_contents form_label">
+                    <label for="program" class="labeled">
+                      Ethics (mandatory) *</label>
+                    <div class="form_input form_radio ethics">
+                      <input type="checkbox" name="programme"checked="checked" class="answers" placeholder=""
+                        id="st"
+                        value="5"
+                        required/>
+                      <label for="st" class="labeled"> 191612680 Computer Ethics (1B) </label>
+                      </div>
+                      </div>
+
+                      <br/>
+                      <br/>
+
+                      <div class="form_contents form_label">
+                        <label for="program" class="labeled">
+                          Graduation (mandatory) *</label>
+                        <div class="form_input form_radio">
+                          <input type="checkbox" name="programme"checked="checked" class="answers" placeholder=""
+                            id="st"
+                            value="10"
+                            required/>
+                          <label for="st" class="labeled"> 192199508 Research Topics 10EC </label>
+                        </br>
+                        </br>
+                          <input type="checkbox" name="programme"checked="checked" class="answers" placeholder=""
+                            id="st"
+                            value="30"
+                            required/>
+                          <label for="st" class="labeled">192199978 Final Project 30EC </label>
+                          </div>
+                          </div>
+                          <br/>
+                          <br/>
+
+                          <h4>You can fill your profiling space with e.g. Additional advanced courses, or courses from related programmes or specailizations like Electrical Engineering, Embedded Systems courses, Cyber security, Data Science, and Software Technology. </h4>
+                          <br/>
+                          <br/>
+
+                          <div class="form_contents form_label">
+                            <label for="program" class="labeled">
+                              ST Profiling space: Orientation* </label>
+                            <div class="form_input form_radio profiling2">
+                              <input type="checkbox" name="programme" class="answers" placeholder=""
+                                id="201400172"
+                                value="5"
+                                />
+                              <label for="201400172" class="labeled"> Design Orientation: 201400172 Industrial Software Engineering Project (10EC) </label>
+                            </br>
+                            </br>
+                              <input type="checkbox" name="programme" class="answers" placeholder=""
+                                id="201700084"
+                                value="5"
+                                />
+                              <label for="201700084" class="labeled"> Research Orientation: 201700084 Software Science (5EC) </label>
+                            </br>
+                            </br>
+                              <input type="checkbox" name="programme" class="answers" placeholder=""
+                                id="201400171"
+                                value="5"
+                                />
+                              <label for="201400171" class="labeled"> Research Orientation: 201400171 Capita Selecta Software Technology (5EC)</label>
+                                </div>
+                              </div>
+
+                              <br/>
+                              <br/>
+
+                              <div class="form_contents form_label">
+                                <label for="program" class="labeled">
+                                  Profiling space: suggested electives </label>
+                                <div class="form_input form_radio profiling">
+                                  <input type="checkbox" name="programme" class="answers" placeholder=""
+                                    id="201700081"
+                                    value="5"
+                                    />
+                                  <label for="201700081" class="labeled"> 201700081 Probabilistic Programming </label>
+                                </br>
+                                </br>
+                                  <input type="checkbox" name="programme" class="answers" placeholder=""
+                                    id="201600051"
+                                    value="5"
+                                    />
+                                  <label for="201600051" class="labeled"> 201600051 Software Security </label>
+                                </br>
+                                </br>
+                                  <input type="checkbox" name="programme" class="answers" placeholder=""
+                                    id="201200006"
+                                    value="5"
+                                    />
+                                  <label for="201200006" class="labeled"> 201200006 Quantitative Evaluation of Embedded Systems</label>
+                                </br>
+                                </br>
+                                  <input type="checkbox" name="programme" class="answers" placeholder=""
+                                    id="192620300"
+                                    value="5"
+                                    />
+                                  <label for="192620300" class="labeled"> 192620300 Performance Evaluation</label>
+                                </br>
+                                </br>
+                                  <input type="checkbox" name="programme" class="answers" placeholder=""
+                                    id="201600070"
+                                    value="5"
+                                    />
+                                  <label for="201600070" class="labeled"> 201600070 Basic Machine Learning</label>
+                                </br>
+                                </br>
+                                  <input type="checkbox" name="programme" class="answers" placeholder=""
+                                    id="201400174"
+                                    value="5"
+                                    />
+                                  <label for="201400174" class="labeled"> 201400174 Data Science</label>
+                                    </div>
+                                  </div>
+                                  
+                                  <br/>
+                              <br/>
+                          <h4>Apart from the above choices, students can also pick:</h4>
+                          <div class="form_contents form_label">
+                            <label for="program" class="labeled">
+                              Internship (Optional)</label>
+                            <div class="form_input form_radio">
+                              <input type="checkbox" name="programme" class="answers tester" placeholder=""
+                                id="internship"
+                                value="20"
+                                />
+                              <label for="internship" class="labeled">Internship 20EC </label>
+                                  <h4 id = "testing">
+                                    1. The internship is a period of study-related professional practice amounting to 20 ECs and is carried out by the student at a company, university or organization outside the University of Twente. <br/> 2. Requirements for starting the internship: <br/> a. students must already have obtained at least 45 ECs of their examination programme; <br/> <a href="ter-2019-master-cs-ist.pdf" download>For more information</a>
+                                  </h4>
+                            </div>
+                          </div>
+
+                                  <br/>
+                                  <br/>
+
+                                  <div class="form_contents form_label">
+                                    <label for="email_address" class="labeled">
+                                      Profiling space: Other courses (course code, course name):</label>
+
+                                    <div class="form_input">
+                                      <input
+                                        type="text"
+                                        name="email_address"
+                                        class="text_input"
+                                        placeholder=""
+                                        id="email_address"
+                                      />
+                                    </div>
+                                  </div>
+
+                                  <br/>
+                                  <br/>
+
+                                  <div class="form_contents form_label">
+                                    <label for="studentcomment1" class="labeled">
+                                      If you proposed "other courses" above, please explain how these form a coherent S&T programme targeting your specific individual goals</label>
+
+                                    <div class="form_input">
+                                      <input
+                                        type="text"
+                                        name="studentcomment1"
+                                        class="text_input"
+                                        placeholder=""
+                                        id="studentcomment1"
+                                      />
+                                    </div>
+                                  </div>
+                                  <br/>
+                                  <br/>
+                                  <br/>
+                                  <br/>
+                                  <h4 id="total">Your Total is = </h4>
+                                  <h4 id="totalError"> </h4>
+                          <br/>
+                          <br/>
+                          <br/>
+                          <p><b>* indicates a required field</b></p>
+                          <br/>
+                          <button type="button" class="btn" onclick="testingg(event)">SUBMIT</button>
+                          <input type="submit" value="RETURN" class="btn"/>
+                          <br/>
+                          <br/>
+                          <br/>
+
+
+
+        </div>
+      </form>
+    </div>
+  </main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/st_app.js"></script>
+</body>
+</html>
